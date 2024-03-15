@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is contact mangaer app using graphql nodejs expres react ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "Naveen S Belandur",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "graphql": "^16.8.1",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.2.1",
+    "nodemon": "^3.1.0"
+  }
+}
