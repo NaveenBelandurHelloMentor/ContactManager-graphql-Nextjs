@@ -13,8 +13,11 @@ const resolvers = require('./app/graphql/resolvers.js')
 
  const StartApolloServer = async () =>{
     const Server = new ApolloServer({
+        // By Making introspection false you cant load schema in the apollo server sandbox and in production appolo sandbox cannot be accesed
+        introspection:false,
         typeDefs,
-        resolvers
+        resolvers,
+        
     })
 
     await Server.start()
